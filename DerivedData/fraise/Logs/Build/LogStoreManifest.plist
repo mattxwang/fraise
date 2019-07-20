@@ -5,6 +5,391 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>39F7FF4D-213A-41B0-800E-6267C1CC63ED</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>39F7FF4D-213A-41B0-800E-6267C1CC63ED.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585295382.97161806</real>
+			<key>timeStoppedRecording</key>
+			<real>585295384.36187303</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>39F7FF4D-213A-41B0-800E-6267C1CC63ED</string>
+		</dict>
+		<key>50FCF69D-0E11-4ED3-B6E3-487266F9C54A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>50FCF69D-0E11-4ED3-B6E3-487266F9C54A.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585294600.65660596</real>
+			<key>timeStoppedRecording</key>
+			<real>585294602.42363906</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>50FCF69D-0E11-4ED3-B6E3-487266F9C54A</string>
+		</dict>
+		<key>514F98B7-3BC6-426A-B503-345B6F361DE5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>514F98B7-3BC6-426A-B503-345B6F361DE5.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585293172.435238</real>
+			<key>timeStoppedRecording</key>
+			<real>585293177.30759394</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>514F98B7-3BC6-426A-B503-345B6F361DE5</string>
+		</dict>
+		<key>571740D6-D73E-421A-B1EA-DBCFF90C08C0</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>571740D6-D73E-421A-B1EA-DBCFF90C08C0.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585285285.178514</real>
+			<key>timeStoppedRecording</key>
+			<real>585285287.99900305</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>571740D6-D73E-421A-B1EA-DBCFF90C08C0</string>
+		</dict>
+		<key>8BC8BD1A-70F1-4469-BC50-B833E9BE2BF6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8BC8BD1A-70F1-4469-BC50-B833E9BE2BF6.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585295445.56471002</real>
+			<key>timeStoppedRecording</key>
+			<real>585295450.47924399</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>8BC8BD1A-70F1-4469-BC50-B833E9BE2BF6</string>
+		</dict>
+		<key>8EC7F03A-5EC4-4D0C-A598-5E7C11770028</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8EC7F03A-5EC4-4D0C-A598-5E7C11770028.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585294919.93748903</real>
+			<key>timeStoppedRecording</key>
+			<real>585294921.85862899</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>8EC7F03A-5EC4-4D0C-A598-5E7C11770028</string>
+		</dict>
+		<key>96D6112E-E177-41F5-9288-A0767C45BECB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>96D6112E-E177-41F5-9288-A0767C45BECB.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585285445.11952698</real>
+			<key>timeStoppedRecording</key>
+			<real>585285453.44298506</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>96D6112E-E177-41F5-9288-A0767C45BECB</string>
+		</dict>
+		<key>A47AA143-BD32-402E-86C9-CF1AA85A171C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A47AA143-BD32-402E-86C9-CF1AA85A171C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585295217.30353701</real>
+			<key>timeStoppedRecording</key>
+			<real>585295219.61310601</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>A47AA143-BD32-402E-86C9-CF1AA85A171C</string>
+		</dict>
+		<key>A5DB3E24-8286-48D7-9C19-E040F0FC795C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A5DB3E24-8286-48D7-9C19-E040F0FC795C.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585294922.91386795</real>
+			<key>timeStoppedRecording</key>
+			<real>585294925.34946203</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>A5DB3E24-8286-48D7-9C19-E040F0FC795C</string>
+		</dict>
+		<key>EB47CE2D-1A8C-4465-AEEB-0F8B68123362</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EB47CE2D-1A8C-4465-AEEB-0F8B68123362.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585294602.70866096</real>
+			<key>timeStoppedRecording</key>
+			<real>585294603.16960001</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>EB47CE2D-1A8C-4465-AEEB-0F8B68123362</string>
+		</dict>
+		<key>F4D547CF-5ADE-4938-BBAF-501DC45687BB</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F4D547CF-5ADE-4938-BBAF-501DC45687BB.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585294323.50230598</real>
+			<key>timeStoppedRecording</key>
+			<real>585294328.32155001</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>F4D547CF-5ADE-4938-BBAF-501DC45687BB</string>
+		</dict>
+		<key>FA193F67-B654-43E1-808F-FD0E6A559526</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FA193F67-B654-43E1-808F-FD0E6A559526.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>fraise project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>fraise</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build fraise</string>
+			<key>timeStartedRecording</key>
+			<real>585294380.833305</real>
+			<key>timeStoppedRecording</key>
+			<real>585294382.038782</real>
+			<key>title</key>
+			<string>Build fraise</string>
+			<key>uniqueIdentifier</key>
+			<string>FA193F67-B654-43E1-808F-FD0E6A559526</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
