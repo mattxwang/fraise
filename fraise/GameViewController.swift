@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GameViewController.swift
 //  fraise
 //
 //  Created by Matt Wang on 2019-07-19.
@@ -32,6 +32,7 @@ class GameViewController: UIViewController {
         "bluetooth speaker",
         "sugar cube"
     ]
+    // game state
     var phraseCount = 0
     let roundTime = 45
     var timeLeft = 0
@@ -39,7 +40,12 @@ class GameViewController: UIViewController {
     var teamBScore = 0
     var gameStarted = false
     var gameTimer: Timer?
+    
+    // game settings
     var skipsAllowed = false
+    var bombMode = true
+    var randomizeTimer = true
+    var showTimer = false
     
     @IBOutlet weak var currentPhrase: UILabel!
     @IBOutlet weak var timeLeftLabel: UILabel!
@@ -88,17 +94,24 @@ class GameViewController: UIViewController {
         teamBScoreLabel.text = String(teamBScore)
         teamAScoreButton.setTitle("", for: .normal)
         teamBScoreButton.setTitle("", for: .normal)
+        timeLeft = roundTime
+        if randomizeTimer {
+            timeLeft += Int.random(in: 1..<30)
+        }
+        if showTimer {
+            timeLeftLabel.text = String(timeLeft)
+        }
     }
     func startGame(){
         newPhrases()
         newPhraseButton.setTitle("next fraise", for: .normal)
         teamAScoreButton.setTitle("+", for: .normal)
         teamBScoreButton.setTitle("+", for: .normal)
-        timeLeft = roundTime
-        timeLeftLabel.text = String(timeLeft)
         gameTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             self.timeLeft -= 1
-            self.timeLeftLabel.text = String(self.timeLeft)
+            if self.showTimer {
+                self.timeLeftLabel.text = String(self.timeLeft)
+            }
             if self.timeLeft == 0 {
                 self.endGame()
             }
@@ -127,6 +140,27 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setupGame()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender:
+        Any?) {
+        if segue.identifier == "SettingsSegue" {
+            endGame()
+            let settingsTableViewController = segue.destination as! SettingsTableViewController
+            settingsTableViewController.setBombMode(bombMode)
+            settingsTableViewController.setRandomizeTimer(randomizeTimer)
+            settingsTableViewController.setShowTimer(showTimer)
+        }
+    }
+    
+    @IBAction func unwindToGame(unwindSegue: UIStoryboardSegue) {
+        if unwindSegue.identifier == "unwindToGameSegue" {
+            let settingsTableViewController = unwindSegue.source as! SettingsTableViewController
+            bombMode = settingsTableViewController.bombMode
+            randomizeTimer = settingsTableViewController.randomizeTimer
+            showTimer = settingsTableViewController.showTimer
+            setupGame()
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
