@@ -43,7 +43,6 @@ class GameViewController: UIViewController {
     
     // game settings
     var skipsAllowed = false
-    var bombMode = true
     var randomizeTimer = true
     var showTimer = false
     
@@ -84,6 +83,15 @@ class GameViewController: UIViewController {
         phrases.shuffle()
         phraseCount = 0
     }
+    func decrementTimer(){
+        timeLeft -= 1
+        if showTimer {
+            timeLeftLabel.text = String(self.timeLeft)
+        }
+        if timeLeft == 0 {
+            endGame()
+        }
+    }
     func setupGame(){
         currentPhrase.text = "welcome to fraise"
         timeLeftLabel.text = ""
@@ -108,15 +116,8 @@ class GameViewController: UIViewController {
         teamAScoreButton.setTitle("+", for: .normal)
         teamBScoreButton.setTitle("+", for: .normal)
         gameTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
-            self.timeLeft -= 1
-            if self.showTimer {
-                self.timeLeftLabel.text = String(self.timeLeft)
-            }
-            if self.timeLeft == 0 {
-                self.endGame()
-            }
+            self.decrementTimer()
         }
-
         gameStarted = true;
     }
     func endGame(){
@@ -147,7 +148,6 @@ class GameViewController: UIViewController {
         if segue.identifier == "SettingsSegue" {
             endGame()
             let settingsTableViewController = segue.destination as! SettingsTableViewController
-            settingsTableViewController.setBombMode(bombMode)
             settingsTableViewController.setRandomizeTimer(randomizeTimer)
             settingsTableViewController.setShowTimer(showTimer)
         }
@@ -156,7 +156,6 @@ class GameViewController: UIViewController {
     @IBAction func unwindToGame(unwindSegue: UIStoryboardSegue) {
         if unwindSegue.identifier == "unwindToGameSegue" {
             let settingsTableViewController = unwindSegue.source as! SettingsTableViewController
-            bombMode = settingsTableViewController.bombMode
             randomizeTimer = settingsTableViewController.randomizeTimer
             showTimer = settingsTableViewController.showTimer
             setupGame()

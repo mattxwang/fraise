@@ -10,16 +10,11 @@ import UIKit
 
 class SettingsTableViewController: UITableViewController {
     
-    var bombMode: Bool = true
     var randomizeTimer: Bool = true
     var showTimer: Bool = false
 
-    @IBOutlet weak var BombModeValue: UISwitch!
     @IBOutlet weak var RandomizeTimerValue: UISwitch!
     @IBOutlet weak var ShowTimerValue: UISwitch!
-    @IBAction func BombModeToggle(_ sender: UISwitch) {
-        bombMode.toggle()
-    }
     @IBAction func RandomizeTimerToggle(_ sender: UISwitch) {
         randomizeTimer.toggle()
     }
@@ -27,11 +22,6 @@ class SettingsTableViewController: UITableViewController {
         showTimer.toggle()
     }
     
-    func setBombMode(_ mode: Bool?){
-        if let modeInput:Bool = mode {
-            bombMode = modeInput;
-        }
-    }
     func setRandomizeTimer(_ mode: Bool?){
         if let modeInput:Bool = mode {
             randomizeTimer = modeInput;
@@ -44,7 +34,6 @@ class SettingsTableViewController: UITableViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        BombModeValue.setOn(bombMode, animated: true)
         RandomizeTimerValue.setOn(randomizeTimer, animated: true)
         ShowTimerValue.setOn(showTimer, animated: true)
         // Uncomment the following line to preserve selection between presentations
@@ -63,7 +52,7 @@ class SettingsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return 2
     }
 
     /*
