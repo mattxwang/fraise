@@ -12,14 +12,21 @@ class SettingsTableViewController: UITableViewController {
     
     var randomizeTimer: Bool = true
     var showTimer: Bool = false
+    
+    var includeSongs: Bool = true
 
     @IBOutlet weak var RandomizeTimerValue: UISwitch!
     @IBOutlet weak var ShowTimerValue: UISwitch!
+    @IBOutlet weak var IncludeSongsValue: UISwitch!
+    
     @IBAction func RandomizeTimerToggle(_ sender: UISwitch) {
         randomizeTimer.toggle()
     }
     @IBAction func ShowTimerToggle(_ sender: UISwitch) {
         showTimer.toggle()
+    }
+    @IBAction func IncludeSongsToggle(_ sender: UISwitch) {
+        includeSongs.toggle()
     }
     
     func setRandomizeTimer(_ mode: Bool?){
@@ -32,10 +39,17 @@ class SettingsTableViewController: UITableViewController {
             showTimer = modeInput;
         }
     }
+    func setIncludeSongs(_ mode: Bool?){
+        if let modeInput:Bool = mode {
+            includeSongs = modeInput;
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         RandomizeTimerValue.setOn(randomizeTimer, animated: true)
         ShowTimerValue.setOn(showTimer, animated: true)
+        IncludeSongsValue.setOn(includeSongs, animated: true)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -45,15 +59,15 @@ class SettingsTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 2
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 2
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 3
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

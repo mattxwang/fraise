@@ -9,110 +9,8 @@
 import UIKit
 
 class GameViewController: UIViewController {
-    var phrases = [
-        "death star",
-        "salsa",
-        "coffee mug",
-        "hockey stick",
-        "screw",
-        "trampoline",
-        "options",
-        "airpods",
-        "goggles",
-        "pizza",
-        "fried rice",
-        "cutting board",
-        "water bottles",
-        "pineapple",
-        "coffee bean",
-        "dress shoe",
-        "board game",
-        "laser",
-        "toilet bowl",
-        "bluetooth speaker",
-        "sugar cube",
-        "phrase",
-        "running shoes",
-        "lion king",
-        "hawaiian shirt",
-        "water filter",
-        "pancake mix",
-        "flip phone",
-        "whole number",
-        "rook",
-        "melon",
-        "outlet store",
-        "microwave oven",
-        "dog walker",
-        "public speaking",
-        "laptop charger",
-        "variable",
-        "sugar cube",
-        "movie theater",
-        "banana bread",
-        "stir-fry",
-        "recycling bin",
-        "passenger door",
-        "electric scooter",
-        "blinds",
-        "palm trees",
-        "laundromat",
-        "telephone pole",
-        "spaghetti strainer",
-        "bed frame",
-        "chandelier",
-        "tie clip",
-        "the princess bride",
-        "fire extinguisher",
-        "small intestine",
-        "water fountain",
-        "cheese block",
-        "milk carton",
-        "suede",
-        "bean burrito",
-        "hair tie",
-        "knife sharpener",
-        "basketball hoop",
-        "swing dance",
-        "kale",
-        "stranger things",
-        "god's plan",
-        "canal",
-        "panama",
-        "suspension bridge",
-        "mop",
-        "cereal box",
-        "disinfectant",
-        "succulent",
-        "thermostat",
-        "standing desk",
-        "cookie mix",
-        "cookie cutter",
-        "snare drum",
-        "blog",
-        "ampersand",
-        "bounce house",
-        "get out",
-        "converses",
-        "grandfather clock",
-        "angry react",
-        "direct message",
-        "laser cutter",
-        "acorn",
-        "aloe vera",
-        "dam",
-        "granola bar",
-        "trail mix",
-        "oatmeal",
-        "hot pot",
-        "dumbbell",
-        "roller blades",
-        "ice skating",
-        "ceiling fan",
-        "orange county",
-        "racks"
-    ]
     // game state
+    var phrases = Fraises.general
     var phraseCount = 0
     let roundTime = 45
     var timeLeft = 0
@@ -125,6 +23,9 @@ class GameViewController: UIViewController {
     var skipsAllowed = false
     var randomizeTimer = true
     var showTimer = false
+    
+    // word groups
+    var includeSongs = true
     
     @IBOutlet weak var currentPhrase: UILabel!
     @IBOutlet weak var timeLeftLabel: UILabel!
@@ -160,6 +61,10 @@ class GameViewController: UIViewController {
         teamBScoreLabel.text = String(teamBScore)
     }
     func newPhrases(){
+        phrases = Fraises.general
+        if includeSongs {
+            phrases += Fraises.songs
+        }
         phrases.shuffle()
         phraseCount = 0
     }
@@ -230,6 +135,8 @@ class GameViewController: UIViewController {
             let settingsTableViewController = segue.destination as! SettingsTableViewController
             settingsTableViewController.setRandomizeTimer(randomizeTimer)
             settingsTableViewController.setShowTimer(showTimer)
+            
+            settingsTableViewController.setIncludeSongs(includeSongs)
         }
     }
     
@@ -238,6 +145,7 @@ class GameViewController: UIViewController {
             let settingsTableViewController = unwindSegue.source as! SettingsTableViewController
             randomizeTimer = settingsTableViewController.randomizeTimer
             showTimer = settingsTableViewController.showTimer
+            includeSongs = settingsTableViewController.includeSongs
             setupGame()
         }
     }

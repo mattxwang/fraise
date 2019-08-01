@@ -85,6 +85,42 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Included Fraises" id="MgQ-Se-xab">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="7RQ-9v-FFF">
+                                        <rect key="frame" x="0.0" y="199.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7RQ-9v-FFF" id="mCD-oE-7kM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aOC-vg-sWF">
+                                                    <rect key="frame" x="345" y="6.5" width="51" height="30.5"/>
+                                                    <connections>
+                                                        <action selector="IncludeSongsToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="RHp-bw-YUy"/>
+                                                        <action selector="RandomizeTimerToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="Gq3-TQ-FVx"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎶 Song Titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-pl-GWO">
+                                                    <rect key="frame" x="20" y="10.5" width="113" height="22.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7b3-pl-GWO" firstAttribute="bottom" secondItem="mCD-oE-7kM" secondAttribute="bottomMargin" id="BZM-3q-GNN"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aOC-vg-sWF" secondAttribute="bottom" constant="-4" id="H7V-eL-YLb"/>
+                                                <constraint firstItem="7b3-pl-GWO" firstAttribute="centerY" secondItem="aOC-vg-sWF" secondAttribute="centerY" id="HW9-Vl-QXI"/>
+                                                <constraint firstItem="7b3-pl-GWO" firstAttribute="leading" secondItem="mCD-oE-7kM" secondAttribute="leadingMargin" id="Kkb-ns-9lv"/>
+                                                <constraint firstItem="aOC-vg-sWF" firstAttribute="trailing" secondItem="mCD-oE-7kM" secondAttribute="trailingMargin" id="P4t-ZE-zSb"/>
+                                                <constraint firstItem="aOC-vg-sWF" firstAttribute="centerY" secondItem="mCD-oE-7kM" secondAttribute="centerY" id="Qwd-wJ-hHa"/>
+                                                <constraint firstItem="aOC-vg-sWF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7b3-pl-GWO" secondAttribute="trailing" constant="8" symbolic="YES" id="czE-jC-A8f"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="5J5-RS-gCx" id="GEi-j8-bRw"/>
@@ -99,6 +135,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="IncludeSongsValue" destination="aOC-vg-sWF" id="F5l-Bh-EXi"/>
                         <outlet property="RandomizeTimerValue" destination="EFe-0i-C8O" id="XFE-sI-ww8"/>
                         <outlet property="ShowTimerValue" destination="Ffu-gk-4FS" id="Qxe-NS-YHs"/>
                     </connections>
@@ -128,8 +165,8 @@
                                     <action selector="generateNewPhrase:" destination="BYZ-38-t0r" eventType="touchDown" id="Qn0-zk-N6g"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fraise" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpm-EN-b7X">
-                                <rect key="frame" x="44.5" y="421.5" width="325" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fraise" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpm-EN-b7X">
+                                <rect key="frame" x="0.0" y="421.5" width="414" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Bmb-og-TU0"/>
                                 </constraints>
@@ -204,6 +241,7 @@
                             <constraint firstAttribute="trailing" secondItem="10k-MK-1AE" secondAttribute="trailing" constant="20" id="nhu-fv-2NO"/>
                             <constraint firstItem="jpm-EN-b7X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="udF-xf-KYz"/>
                             <constraint firstItem="Rn7-fV-4hn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vCT-wk-RNy"/>
+                            <constraint firstItem="jpm-EN-b7X" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="xKM-BB-Eno"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
