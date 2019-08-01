@@ -15,6 +15,9 @@
 		87A7977722E2B21800B0A731 /* fraiseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7977622E2B21800B0A731 /* fraiseTests.swift */; };
 		87A7978222E2B21800B0A731 /* fraiseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A7978122E2B21800B0A731 /* fraiseUITests.swift */; };
 		87B1F3B322F2977A00116E54 /* Fraises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B1F3B222F2977A00116E54 /* Fraises.swift */; };
+		87B1F3B522F2A49100116E54 /* Nexa in Resources */ = {isa = PBXBuildFile; fileRef = 87B1F3B422F2A49100116E54 /* Nexa */; };
+		87B1F3B622F2A77100116E54 /* Nexa in Resources */ = {isa = PBXBuildFile; fileRef = 87B1F3B422F2A49100116E54 /* Nexa */; };
+		87B1F3B722F2A77200116E54 /* Nexa in Resources */ = {isa = PBXBuildFile; fileRef = 87B1F3B422F2A49100116E54 /* Nexa */; };
 		87B9D86422E95EDC001536BA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9D86322E95EDC001536BA /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,7 @@
 		87A7978122E2B21800B0A731 /* fraiseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fraiseUITests.swift; sourceTree = "<group>"; };
 		87A7978322E2B21800B0A731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B1F3B222F2977A00116E54 /* Fraises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraises.swift; sourceTree = "<group>"; };
+		87B1F3B422F2A49100116E54 /* Nexa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Nexa; path = fraise/Nexa; sourceTree = SOURCE_ROOT; };
 		87B9D86322E95EDC001536BA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,7 @@
 			children = (
 				87A7976122E2B21400B0A731 /* AppDelegate.swift */,
 				87A7976522E2B21400B0A731 /* Main.storyboard */,
+				87B1F3B422F2A49100116E54 /* Nexa */,
 				87985B5022E2BCF500C3463D /* GameViewController.swift */,
 				87B1F3B222F2977A00116E54 /* Fraises.swift */,
 				87B9D86322E95EDC001536BA /* SettingsTableViewController.swift */,
@@ -235,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B1F3B522F2A49100116E54 /* Nexa in Resources */,
 				87A7976C22E2B21700B0A731 /* LaunchScreen.storyboard in Resources */,
 				87A7976922E2B21700B0A731 /* Assets.xcassets in Resources */,
 				87A7976722E2B21400B0A731 /* Main.storyboard in Resources */,
@@ -245,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B1F3B622F2A77100116E54 /* Nexa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B1F3B722F2A77200116E54 /* Nexa in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
