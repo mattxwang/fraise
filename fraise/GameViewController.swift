@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftySound
 
 class GameViewController: UIViewController {
     // game state
@@ -23,6 +24,7 @@ class GameViewController: UIViewController {
     var skipsAllowed = false
     var randomizeTimer = true
     var showTimer = false
+    var inconsistentTimer = false
     
     // word groups
     var includeSongs = true
@@ -70,6 +72,9 @@ class GameViewController: UIViewController {
     }
     func decrementTimer(){
         timeLeft -= 1
+        if !inconsistentTimer {
+            Sound.play(file: "tick.mp3")
+        }
         if showTimer {
             timeLeftLabel.text = String(self.timeLeft)
         }
@@ -107,6 +112,7 @@ class GameViewController: UIViewController {
     }
     func endGame(){
         gameTimer?.invalidate()
+        Sound.stopAll()
         currentPhrase.text = "game over!"
         newPhraseButton.setTitle("new game", for: .normal)
         if (teamAScore > teamBScore){

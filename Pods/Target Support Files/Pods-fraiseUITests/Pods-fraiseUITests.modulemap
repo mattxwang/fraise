@@ -1,0 +1,6 @@
+framework module Pods_fraiseUITests {
+  umbrella header "Pods-fraiseUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_fraise {
+  umbrella header "Pods-fraise-umbrella.h"
+
+  export *
+  module * { export * }
+}
