@@ -106,7 +106,6 @@
                                                     <rect key="frame" x="345" y="6.5" width="51" height="30.5"/>
                                                     <connections>
                                                         <action selector="IncludeSongsToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="RHp-bw-YUy"/>
-                                                        <action selector="RandomizeTimerToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="Gq3-TQ-FVx"/>
                                                     </connections>
                                                 </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎶 Song Titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-pl-GWO">
@@ -127,6 +126,37 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="oqi-qn-2SI">
+                                        <rect key="frame" x="0.0" y="243.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oqi-qn-2SI" id="V5Y-h1-d9A">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="idv-SI-BPd">
+                                                    <rect key="frame" x="345" y="6.5" width="51" height="30.5"/>
+                                                    <connections>
+                                                        <action selector="IncludeMoviesToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="Nk9-iv-Fc1"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎥 Movie Titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOu-jk-HAv">
+                                                    <rect key="frame" x="20" y="10.5" width="119.5" height="22.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="idv-SI-BPd" secondAttribute="bottom" constant="-4" id="00G-co-KAl"/>
+                                                <constraint firstItem="idv-SI-BPd" firstAttribute="centerY" secondItem="V5Y-h1-d9A" secondAttribute="centerY" id="2Y5-kL-arP"/>
+                                                <constraint firstItem="idv-SI-BPd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hOu-jk-HAv" secondAttribute="trailing" constant="8" symbolic="YES" id="9yp-xK-hq0"/>
+                                                <constraint firstItem="idv-SI-BPd" firstAttribute="trailing" secondItem="V5Y-h1-d9A" secondAttribute="trailingMargin" id="XEI-Z1-4jl"/>
+                                                <constraint firstItem="hOu-jk-HAv" firstAttribute="leading" secondItem="V5Y-h1-d9A" secondAttribute="leadingMargin" id="df5-va-I2n"/>
+                                                <constraint firstItem="hOu-jk-HAv" firstAttribute="centerY" secondItem="idv-SI-BPd" secondAttribute="centerY" id="xlB-Fh-2KH"/>
+                                                <constraint firstItem="hOu-jk-HAv" firstAttribute="bottom" secondItem="V5Y-h1-d9A" secondAttribute="bottomMargin" id="ys5-39-eaP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -143,6 +173,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="IncludeMoviesValue" destination="idv-SI-BPd" id="iDt-fa-ePg"/>
                         <outlet property="IncludeSongsValue" destination="aOC-vg-sWF" id="F5l-Bh-EXi"/>
                         <outlet property="RandomizeTimerValue" destination="EFe-0i-C8O" id="XFE-sI-ww8"/>
                         <outlet property="ShowTimerValue" destination="Ffu-gk-4FS" id="Qxe-NS-YHs"/>

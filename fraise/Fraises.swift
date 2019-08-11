@@ -8,7 +8,6 @@
 
 struct Fraises{
      static let general = [
-        "death star",
         "salsa",
         "coffee mug",
         "hockey stick",
@@ -31,7 +30,6 @@ struct Fraises{
         "sugar cube",
         "phrase",
         "running shoes",
-        "lion king",
         "hawaiian shirt",
         "water filter",
         "pancake mix",
@@ -60,7 +58,6 @@ struct Fraises{
         "bed frame",
         "chandelier",
         "tie clip",
-        "the princess bride",
         "fire extinguisher",
         "small intestine",
         "water fountain",
@@ -147,5 +144,41 @@ struct Fraises{
         "cake by the ocean",
         "i will survive",
         "shooting stars"
+    ]
+    static let movies = [
+        "the princess bride",
+        "lion king",
+        "death star",
+        "good will hunting",
+        "the hangover",
+        "the notebook",
+        "mulan",
+        "kill bill",
+        "forrest gump",
+        "crazy rich asians",
+        "black hawk down",
+        "hurt locker",
+        "the godfather",
+        "spirited away",
+        "the shawshank redemption",
+        "the shining",
+        "the dark knight",
+        "inception",
+        "terminator",
+        "taxi driver",
+        "moonlight",
+        "la la land",
+        "home alone",
+        "pulp fiction",
+        "back to the future",
+        "mama mia",
+        "rain man",
+        "saving private ryan",
+        "fight club",
+        "black panther",
+        "life of pi",
+        "interstellar",
+        "avatar",
+        "jaws"
     ]
 }
