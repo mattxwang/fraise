@@ -29,6 +29,7 @@ class GameViewController: UIViewController {
     // word groups
     var includeSongs = true
     var includeMovies = true
+    var includeBooks = true
     
     @IBOutlet weak var currentPhrase: UILabel!
     @IBOutlet weak var timeLeftLabel: UILabel!
@@ -70,6 +71,9 @@ class GameViewController: UIViewController {
         }
         if includeMovies {
             phrases += Fraises.movies
+        }
+        if includeBooks {
+            phrases += Fraises.books
         }
         phrases.shuffle()
         phraseCount = 0
@@ -148,6 +152,7 @@ class GameViewController: UIViewController {
             
             settingsTableViewController.setIncludeSongs(includeSongs)
             settingsTableViewController.setIncludeMovies(includeMovies)
+            settingsTableViewController.setIncludeBooks(includeBooks)
         }
     }
     
@@ -158,6 +163,7 @@ class GameViewController: UIViewController {
             showTimer = settingsTableViewController.showTimer
             includeSongs = settingsTableViewController.includeSongs
             includeMovies = settingsTableViewController.includeMovies
+            includeBooks = settingsTableViewController.includeBooks
             setupGame()
         }
     }

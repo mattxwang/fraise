@@ -157,6 +157,37 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="cVs-mx-Njy">
+                                        <rect key="frame" x="0.0" y="287.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cVs-mx-Njy" id="YxH-UZ-gFa">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XBD-wh-U1O">
+                                                    <rect key="frame" x="345" y="6.5" width="51" height="30.5"/>
+                                                    <connections>
+                                                        <action selector="IncludeBooksToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="3Rg-3s-P6C"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📚 Book Titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTf-Gf-lW0">
+                                                    <rect key="frame" x="20" y="10.5" width="112.5" height="22.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="XBD-wh-U1O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CTf-Gf-lW0" secondAttribute="trailing" constant="8" symbolic="YES" id="8Ug-FI-LWE"/>
+                                                <constraint firstItem="XBD-wh-U1O" firstAttribute="centerY" secondItem="YxH-UZ-gFa" secondAttribute="centerY" id="Iwm-nZ-WCs"/>
+                                                <constraint firstItem="CTf-Gf-lW0" firstAttribute="leading" secondItem="YxH-UZ-gFa" secondAttribute="leadingMargin" id="MZU-LF-S9m"/>
+                                                <constraint firstItem="CTf-Gf-lW0" firstAttribute="centerY" secondItem="XBD-wh-U1O" secondAttribute="centerY" id="VNR-yy-5Kj"/>
+                                                <constraint firstItem="CTf-Gf-lW0" firstAttribute="bottom" secondItem="YxH-UZ-gFa" secondAttribute="bottomMargin" id="eO1-zH-ycP"/>
+                                                <constraint firstItem="XBD-wh-U1O" firstAttribute="trailing" secondItem="YxH-UZ-gFa" secondAttribute="trailingMargin" id="mPr-i1-wa1"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XBD-wh-U1O" secondAttribute="bottom" constant="-4" id="moW-9E-iM9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -173,6 +204,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="IncludeBooksValue" destination="XBD-wh-U1O" id="Pbw-A9-8zl"/>
                         <outlet property="IncludeMoviesValue" destination="idv-SI-BPd" id="iDt-fa-ePg"/>
                         <outlet property="IncludeSongsValue" destination="aOC-vg-sWF" id="F5l-Bh-EXi"/>
                         <outlet property="RandomizeTimerValue" destination="EFe-0i-C8O" id="XFE-sI-ww8"/>
