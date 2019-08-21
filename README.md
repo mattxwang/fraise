@@ -1,5 +1,8 @@
 # fraise
 
+[![iTunes App Store](https://img.shields.io/itunes/v/1474441078)](https://apps.apple.com/app/id1474441078)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/malsf21/fraise?sort=semver)](https://github.com/malsf21/fraise/releases)
+
 fraise is a very small mobile app that I made because [this app](https://apps.apple.com/us/app/party-catchphrase/id1088619695) is really bad. It's by no means a great app, but it was a good exercise for me to re-learn Swift and the new iOS app development cycle.
 
 If you have any improvements at all, I encourage you to submit a PR or an issue, but I can't guarantee that I'll do any more work on this app - it's just here for fun.
