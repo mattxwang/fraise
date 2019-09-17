@@ -12,7 +12,6 @@ struct Fraises{
         "coffee mug",
         "hockey stick",
         "screw",
-        "trampoline",
         "options",
         "airpods",
         "goggles",
@@ -101,7 +100,6 @@ struct Fraises{
         "hot pot",
         "dumbbell",
         "roller blades",
-        "ice skating",
         "ceiling fan",
         "orange county",
         "racks"
@@ -267,5 +265,35 @@ struct Fraises{
         "order of the phoenix",
         "on the road",
         "of mice and men"
+    ]
+    static let sports = [
+        "archery",
+        "curling",
+        "triatholon",
+        "synchronised swimming",
+        "water polo",
+        "mountain biking",
+        "trampoline",
+        "boxing",
+        "fencing",
+        "golf",
+        "field hockey",
+        "sailing",
+        "squash",
+        "ice skating",
+        "table tennis",
+        "cricket",
+        "figure skating",
+        "polo",
+        "volleyball",
+        "gymnastics",
+        "rowing",
+        "ski jumping",
+        "skeleton",
+        "bowling",
+        "cheerleading",
+        "roller hockey",
+        "ultimate frisbee",
+        "softball"
     ]
 }
