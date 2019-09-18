@@ -108,8 +108,8 @@
                                                         <action selector="IncludeSongsToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="RHp-bw-YUy"/>
                                                     </connections>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎶 Song Titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-pl-GWO">
-                                                    <rect key="frame" x="20" y="10.5" width="113" height="22.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎶 Modern Songs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b3-pl-GWO">
+                                                    <rect key="frame" x="20" y="10.5" width="139.5" height="22.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -139,8 +139,8 @@
                                                         <action selector="IncludeMoviesToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="Nk9-iv-Fc1"/>
                                                     </connections>
                                                 </switch>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎥 Movie Titles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOu-jk-HAv">
-                                                    <rect key="frame" x="20" y="10.5" width="119.5" height="22.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎥 Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOu-jk-HAv">
+                                                    <rect key="frame" x="20" y="10.5" width="82" height="22.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -188,6 +188,37 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="2Lx-p6-Hdw">
+                                        <rect key="frame" x="0.0" y="331.5" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Lx-p6-Hdw" id="bVH-lN-Xja">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brT-Up-XbB">
+                                                    <rect key="frame" x="345" y="6.5" width="51" height="30.5"/>
+                                                    <connections>
+                                                        <action selector="IncludeSportsToggle:" destination="5J5-RS-gCx" eventType="valueChanged" id="Z4l-pZ-cYr"/>
+                                                    </connections>
+                                                </switch>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⚽ Sports" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGl-va-mX0">
+                                                    <rect key="frame" x="20" y="10.5" width="78.5" height="22.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="brT-Up-XbB" secondAttribute="bottom" constant="-4" id="BbD-BD-40l"/>
+                                                <constraint firstItem="brT-Up-XbB" firstAttribute="trailing" secondItem="bVH-lN-Xja" secondAttribute="trailingMargin" id="C19-j0-oON"/>
+                                                <constraint firstItem="JGl-va-mX0" firstAttribute="bottom" secondItem="bVH-lN-Xja" secondAttribute="bottomMargin" id="C8w-V0-WyQ"/>
+                                                <constraint firstItem="brT-Up-XbB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JGl-va-mX0" secondAttribute="trailing" constant="8" symbolic="YES" id="W6r-CN-6Ao"/>
+                                                <constraint firstItem="brT-Up-XbB" firstAttribute="centerY" secondItem="bVH-lN-Xja" secondAttribute="centerY" id="brh-Dp-5p5"/>
+                                                <constraint firstItem="JGl-va-mX0" firstAttribute="centerY" secondItem="brT-Up-XbB" secondAttribute="centerY" id="hjO-9u-HFC"/>
+                                                <constraint firstItem="JGl-va-mX0" firstAttribute="leading" secondItem="bVH-lN-Xja" secondAttribute="leadingMargin" id="uIZ-Gi-FDn"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -207,6 +238,7 @@
                         <outlet property="IncludeBooksValue" destination="XBD-wh-U1O" id="Pbw-A9-8zl"/>
                         <outlet property="IncludeMoviesValue" destination="idv-SI-BPd" id="iDt-fa-ePg"/>
                         <outlet property="IncludeSongsValue" destination="aOC-vg-sWF" id="F5l-Bh-EXi"/>
+                        <outlet property="IncludeSportsValue" destination="brT-Up-XbB" id="eTa-lb-WT9"/>
                         <outlet property="RandomizeTimerValue" destination="EFe-0i-C8O" id="XFE-sI-ww8"/>
                         <outlet property="ShowTimerValue" destination="Ffu-gk-4FS" id="Qxe-NS-YHs"/>
                     </connections>

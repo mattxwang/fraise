@@ -16,12 +16,14 @@ class SettingsTableViewController: UITableViewController {
     var includeSongs: Bool = true
     var includeMovies: Bool = true
     var includeBooks: Bool = true
+    var includeSports: Bool = true
 
     @IBOutlet weak var RandomizeTimerValue: UISwitch!
     @IBOutlet weak var ShowTimerValue: UISwitch!
     @IBOutlet weak var IncludeSongsValue: UISwitch!
     @IBOutlet weak var IncludeMoviesValue: UISwitch!
     @IBOutlet weak var IncludeBooksValue: UISwitch!
+    @IBOutlet weak var IncludeSportsValue: UISwitch!
     
     @IBAction func RandomizeTimerToggle(_ sender: UISwitch) {
         randomizeTimer.toggle()
@@ -37,6 +39,9 @@ class SettingsTableViewController: UITableViewController {
     }
     @IBAction func IncludeBooksToggle(_ sender: UISwitch) {
         includeBooks.toggle()
+    }
+    @IBAction func IncludeSportsToggle(_ sender: UISwitch) {
+        includeSports.toggle()
     }
     
     func setRandomizeTimer(_ mode: Bool?){
@@ -66,6 +71,12 @@ class SettingsTableViewController: UITableViewController {
         }
     }
     
+    func setIncludeSports(_ mode: Bool?){
+        if let modeInput:Bool = mode {
+            includeSports = modeInput;
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         RandomizeTimerValue.setOn(randomizeTimer, animated: true)
@@ -73,6 +84,7 @@ class SettingsTableViewController: UITableViewController {
         IncludeSongsValue.setOn(includeSongs, animated: true)
         IncludeMoviesValue.setOn(includeMovies, animated: true)
         IncludeBooksValue.setOn(includeBooks, animated: true)
+        IncludeSportsValue.setOn(includeSports, animated: true)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
