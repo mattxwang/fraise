@@ -31,6 +31,7 @@ class GameViewController: UIViewController {
     var includeMovies = true
     var includeBooks = true
     var includeSports = true
+    var includeFood = true
     
     @IBOutlet weak var currentPhrase: UILabel!
     @IBOutlet weak var timeLeftLabel: UILabel!
@@ -78,6 +79,9 @@ class GameViewController: UIViewController {
         }
         if includeSports {
             phrases += Fraises.sports
+        }
+        if includeFood {
+            phrases += Fraises.food
         }
         phrases.shuffle()
         phraseCount = 0
@@ -158,6 +162,7 @@ class GameViewController: UIViewController {
             settingsTableViewController.setIncludeMovies(includeMovies)
             settingsTableViewController.setIncludeBooks(includeBooks)
             settingsTableViewController.setIncludeSports(includeSports)
+            settingsTableViewController.setIncludeFood(includeFood)
         }
     }
     
@@ -170,6 +175,7 @@ class GameViewController: UIViewController {
             includeMovies = settingsTableViewController.includeMovies
             includeBooks = settingsTableViewController.includeBooks
             includeSports = settingsTableViewController.includeSports
+            includeFood = settingsTableViewController.includeFood
             setupGame()
         }
     }
