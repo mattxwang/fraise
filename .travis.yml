@@ -1,0 +1,5 @@
+os: osx
+language: swift
+osx_image: xcode11.2
+script:
+    - xctool -workspace fraise.xcworkspace -scheme Pods-fraise run-tests
