@@ -68,17 +68,17 @@
 		6A2A1145471FAACDC85A8E932FFD4467 /* Pods-fraiseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fraiseUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C4ED17E1E0A763EA759768F4FEEDA1E /* Pods-fraiseUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fraiseUITests-Info.plist"; sourceTree = "<group>"; };
 		6E2C326CFA88251FC411480D3831E4D8 /* Pods-fraiseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fraiseUITests.release.xcconfig"; sourceTree = "<group>"; };
-		6E5D0A8A86C46C60B59AB4FF223844B2 /* Pods_fraise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fraise.framework; path = "Pods-fraise.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E5D0A8A86C46C60B59AB4FF223844B2 /* Pods_fraise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fraise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F4239045DFB51648C658F8874A4DFF /* SwiftySound.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftySound.modulemap; sourceTree = "<group>"; };
 		92F667B2B8B4F979ABFB027991B94ECE /* Pods-fraise-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fraise-frameworks.sh"; sourceTree = "<group>"; };
-		996615DEDCD6C2933EC3F8504427765B /* SwiftySound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftySound.framework; path = SwiftySound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		996615DEDCD6C2933EC3F8504427765B /* SwiftySound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftySound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FBC95EBA695B60E1A26BA4A48A2A1BD /* Pods-fraiseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fraiseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A97F67AB59C63F3FFCAFBF1520B88022 /* Pods-fraiseUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fraiseUITests-umbrella.h"; sourceTree = "<group>"; };
 		AF4801EB954806D18469E7572ACDCF0D /* Pods-fraiseUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fraiseUITests-dummy.m"; sourceTree = "<group>"; };
 		B001DE4970BA69B7FA26C011F8DBFAFC /* Pods-fraiseTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fraiseTests-dummy.m"; sourceTree = "<group>"; };
-		C36131C83DDEF5EAF400A8D73CC1D8CC /* Pods_fraiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fraiseTests.framework; path = "Pods-fraiseTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C78D52C04CCFD69194536E516FA140D7 /* Pods_fraiseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fraiseUITests.framework; path = "Pods-fraiseUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36131C83DDEF5EAF400A8D73CC1D8CC /* Pods_fraiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fraiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C78D52C04CCFD69194536E516FA140D7 /* Pods_fraiseUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fraiseUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8CD6F87021A7EB352A78EBF5D3FDCCF /* SwiftySound.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftySound.xcconfig; sourceTree = "<group>"; };
 		DEA0543E86A05E4DD79013CBB4205D1B /* Pods-fraise-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fraise-dummy.m"; sourceTree = "<group>"; };
 		E07B0E7D8EDD7E883339D7E8FA65819E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -159,7 +159,6 @@
 				37F45B61E7CEF477C23D86488B6123E1 /* Sound.swift */,
 				F41DD7C543098975A77430D331819C80 /* Support Files */,
 			);
-			name = SwiftySound;
 			path = SwiftySound;
 			sourceTree = "<group>";
 		};
@@ -384,6 +383,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = 1AB87B0684FCF86B3DFB3FC5E2AB7855 /* Products */;
