@@ -22,7 +22,6 @@
 		87B1F3B722F2A77200116E54 /* Nexa in Resources */ = {isa = PBXBuildFile; fileRef = 87B1F3B422F2A49100116E54 /* Nexa */; };
 		87B9D86422E95EDC001536BA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B9D86322E95EDC001536BA /* SettingsTableViewController.swift */; };
 		87F5D07723A5E10400D00B71 /* Pods_fraise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A914E1D6485C92511768D12F /* Pods_fraise.framework */; };
-		87F5D07823A5E10400D00B71 /* Pods_fraise.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A914E1D6485C92511768D12F /* Pods_fraise.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4C4A5BC70FC9DBE70108C7F /* Pods_fraiseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F69AFC90D0E1D24F110DBB9 /* Pods_fraiseTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,20 +41,6 @@
 			remoteInfo = fraise;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		87F5D07923A5E10400D00B71 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				87F5D07823A5E10400D00B71 /* Pods_fraise.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0F69AFC90D0E1D24F110DBB9 /* Pods_fraiseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fraiseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,7 +191,6 @@
 				87A7975B22E2B21300B0A731 /* Frameworks */,
 				87A7975C22E2B21300B0A731 /* Resources */,
 				735C1AEE4B843470CF90585D /* [CP] Embed Pods Frameworks */,
-				87F5D07923A5E10400D00B71 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
