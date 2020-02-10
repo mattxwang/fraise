@@ -41,10 +41,11 @@ class GameViewController: UIViewController {
     @IBOutlet weak var teamBScoreLabel: UILabel!
     @IBOutlet weak var teamBScoreButton: UIButton!
     @IBAction func generateNewPhrase(_ sender: Any) {
-        if !gameStarted{
+        if !gameStarted {
+            resetGame()
             startGame()
         }
-        else{
+        else {
             if phraseCount + 1 < phrases.count{
                 phraseCount += 1
             }
@@ -98,16 +99,9 @@ class GameViewController: UIViewController {
             endGame()
         }
     }
-    func setupGame(){
-        currentPhrase.text = "welcome to fraise"
-        timeLeftLabel.text = ""
-        newPhraseButton.setTitle("start game", for: .normal)
+    func resetGame(){
         teamAScore = 0
         teamBScore = 0
-        teamAScoreLabel.text = String(teamAScore)
-        teamBScoreLabel.text = String(teamBScore)
-        teamAScoreButton.setTitle("", for: .normal)
-        teamBScoreButton.setTitle("", for: .normal)
         timeLeft = roundTime
         if randomizeTimer {
             timeLeft += Int.random(in: 1..<30)
@@ -116,9 +110,21 @@ class GameViewController: UIViewController {
             timeLeftLabel.text = String(timeLeft)
         }
     }
+    func setupGame(){
+        currentPhrase.text = "welcome to fraise"
+        timeLeftLabel.text = ""
+        newPhraseButton.setTitle("start game", for: .normal)
+        teamAScoreLabel.text = "-"
+        teamBScoreLabel.text = "-"
+        teamAScoreButton.setTitle("", for: .normal)
+        teamBScoreButton.setTitle("", for: .normal)
+    }
     func startGame(){
+        resetGame()
         newPhrases()
         newPhraseButton.setTitle("next fraise", for: .normal)
+        teamAScoreLabel.text = String(teamAScore)
+        teamBScoreLabel.text = String(teamBScore)
         teamAScoreButton.setTitle("+", for: .normal)
         teamBScoreButton.setTitle("+", for: .normal)
         gameTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
