@@ -1,7 +1,7 @@
 # fraise
 
 [![iTunes App Store](https://img.shields.io/itunes/v/1474441078)](https://apps.apple.com/app/id1474441078)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/malsf21/fraise?sort=semver)](https://github.com/malsf21/fraise/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/mattxwang/fraise?sort=semver)](https://github.com/mattxwang/fraise/releases)
 
 fraise is a very small mobile app that I made because [this app](https://apps.apple.com/us/app/party-catchphrase/id1088619695) is really bad. It's by no means a great app, but it was a good exercise for me to re-learn Swift and the new iOS app development cycle.
 
@@ -13,4 +13,4 @@ fraise doesn't collect or store any data from the app, other than data collected
 
 ## attribution
 
-The icon for this app is a strawberry created by [Camila Quintero](https://thenounproject.com/alimachaves/), licensed under Creative Commons CCBY. I specifically got it from [the Noun Project](https://thenounproject.com/search/?q=strawberry&creator=34297&i=593423). 
+The icon for this app is a strawberry created by [Camila Quintero](https://thenounproject.com/alimachaves/), licensed under Creative Commons CCBY. I specifically got it from [the Noun Project](https://thenounproject.com/search/?q=strawberry&creator=34297&i=593423).
